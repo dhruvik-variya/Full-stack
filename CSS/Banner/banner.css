@@ -1,0 +1,39 @@
+.main{
+    /* background-color: aqua; */
+    width: 900px;
+    height: 350px;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 30px;
+    background-image: url(./bggg.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+p{
+    color: #ffffff;
+    width: 300px;
+    float: right;
+    
+}
+
+h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+}
+
+.para-1{
+    float: inline-start;
+}
+
+.para-2{
+    float: inherit;
+}
+
+.karna{
+    width: 300px ;
+    border-radius: 20px;
+}

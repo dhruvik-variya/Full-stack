@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: #130f40;
+  color: #fff;
+}
+
+h1{
+  text-align: center;
+  padding-bottom: 10%;
+  font-size: 50px;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.counterup {
+  width: 23%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 70px 20px;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+}
+.counterup h2 {
+  font-size: 55px;
+}
+.counterup h3 {
+  font-size: 23px;
+  text-transform: capitalize;
+}

@@ -1,0 +1,75 @@
+/* index.1 */
+
+.wel-msg{
+    font-size: 30px;
+    color: #EADBC8;
+    padding: 10px;
+    background-color: #141E46;
+    border: 1px solid #ddd transparent;
+    border-radius: 10px;
+}
+
+.main{
+    padding: 10px 30px;
+    background: #000;
+    color: white;
+    border: #000 2px solid;
+    transition: all 0.4s;
+    margin-top: 10px;
+}
+
+.main:hover{
+    background:white;
+    color: black;
+    cursor: pointer;
+    
+}
+
+
+/* index.2 */
+
+.t-1,.t-2,.t-3{
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    background-color: #32012F;
+    font-size: 20px;
+}
+
+/* index.3 */
+
+.text {
+    font-family:'Courier New', Courier, monospace;
+    color:#32012F;
+}
+
+
+.main{
+    padding: 10px 30px;
+    background: #000;
+    color: white;
+    border: #000 2px solid;
+    transition: all 0.4s;
+    margin-top: 10px;
+}
+
+.main:hover{
+    background:white;
+    color: black;
+    cursor: pointer;
+    
+}
+/* index.4 */
+
+.font {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #006769;
+}
+
+/* index.5 */
+
+.paragraph{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

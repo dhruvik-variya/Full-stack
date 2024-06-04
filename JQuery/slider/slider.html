@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+</head>
+
+<body>
+    <h2>Image slider using JS</h2>
+    <div class="slider">
+
+        <div class="slide">
+            <img src="./img/a.jpeg" alt="Photo1" />
+        </div>
+
+        <div class="slide">
+            <img src="./img/a.jpg" alt="Photo1" />
+        </div>
+
+        <div class="slide">
+            <img src="./img/c.jpeg" alt="Photo1" />
+        </div>
+
+        <div class="slide">
+            <img src="./img/c.jpg" alt="Photo1" />
+        </div>
+
+        <button class="btn-slide prev"><i class="fas fa-3x fa-chevron-circle-left"></i></button>
+        <button class="btn-slide next"><i class="fas fa-3x fa-chevron-circle-right"></i></button>
+
+    </div>
+    <div class="dots-container">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+        <span class="dot" data-slide="3"></span>
+    </div>
+
+    <script src="./JS/slider.js"></script>
+    <script src="./JS/jquery.min.js"></script>
+</body>
+
+</html>

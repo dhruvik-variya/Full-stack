@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="g:\Full-stack\JQuery\Particles\JS\jquery.min.js"></script>
+    <!-- chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <!-- Font Awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header Start -->
+        <div class="header">
+            <div class="logo">
+                <div class="h">
+                    <div>
+                        <i class="fa-solid fa-bars menu"></i>
+                    </div>
+                    <h2>DV</h2>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" id="search" placeholder="search here">
+                <label for="search"><i class="fas fa-search"></i></label>
+            </div>
+            <i class="fas fa-bell"></i>
+            <div class="user">
+                <img src="./img/profile pic.jpeg" alt="">
+            </div>
+        </div>
+        <!-- Header end -->
+
+        <!-- Sidebar Start -->
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-user-graduate"></i>
+                        <div>Students</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <div>Teachers</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <div>Employees</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>Analytics</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <div>Ernings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div>Settings</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        <div>Help</div>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+        <!-- Sidebar end -->
+
+        <div class="main">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">2498</div>
+                        <div class="card-name">Students</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">5739</div>
+                        <div class="card-name">Teachers</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">2788</div>
+                        <div class="card-name">Employees</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="number">$ 23,000</div>
+                        <div class="card-name">Ernings</div>
+                    </div>
+                    <div class="icon-box">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- content area start-->
+            <section class="chart-parentBox">
+                <!-- first chart -->
+                <div class="chartBox">
+                    <div class="firstchart"> 
+                            <canvas id="barChart"></canvas>
+                     </div>
+                </div>
+                <!-- second chart -->
+                <div class="chartBox"> 
+                    <div class="secondchart">
+                        <div id="chart-wrap"></div>
+                    </div>
+                </div>
+
+                <!-- celender  -->
+                <div class="chartBox-map">
+                    <div class="thirdchart">
+                        <div class="calendar-wrap">
+                             
+                            <table class="calendar">
+                              <thead>
+                                <tr>
+                                  <th class="day-title" scope="col">Sun</th>
+                                  <th class="day-title" scope="col">Mon</th>
+                                  <th class="day-title" scope="col">Tue</th>
+                                  <th class="day-title" scope="col">Wed</th>
+                                  <th class="day-title" scope="col">Thu</th>
+                                  <th class="day-title" scope="col">Fri</th>
+                                  <th class="day-title" scope="col">Sat</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="week">
+                                  <td class="day prev-mon" tabindex="0"><span class="day-number">29</span></td>
+                                  <td class="day prev-mon" tabindex="0"><span class="day-number">30</span></td>
+                                  <td class="day prev-mon" tabindex="0"><span class="day-number">31</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">1</span></td>
+                                  <td class="day today" tabindex="0"><span class="day-number">2</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">3</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">4</span></td>
+                                </tr>
+                                <tr class="week">
+                                  <td class="day" tabindex="0"><span class="day-number">5</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">6</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">7</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">8</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">9</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">10</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">11</span></td>
+                                </tr>
+                                <tr class="week">
+                                  <td class="day" tabindex="0"><span class="day-number">12</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">13</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">14</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">15</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">16</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">17</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">18</span></td>
+                                </tr>
+                                <tr class="week">
+                                  <td class="day" tabindex="0"><span class="day-number">19</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">20</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">21</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">22</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">23</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">24</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">25</span></td>
+                                </tr>
+                                <tr class="week">
+                                  <td class="day" tabindex="0"><span class="day-number">26</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">27</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">28</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">29</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">30</span></td>
+                                  <td class="day" tabindex="0"><span class="day-number">31</span></td>
+                                  <td class="day next-mon" tabindex="0"><span class="day-number">1</span></td>
+                                </tr>
+                              </tbody>
+                            </table> 
+                            <a class="button reset">Clear date-range</a>
+                          </div>
+                    </div>
+                </div>
+                <!-- map -->
+                <div class="chartBox"> 
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14875.526245982059!2d72.80423475273322!3d21.23654468744162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04eaf38004241%3A0x7ec697f2c611dc05!2sDabholi%2C%20Surat%2C%20Gujarat%20395004!5e0!3m2!1sen!2sin!4v1717411886265!5m2!1sen!2sin" width="580" height="395" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+            <!-- content area end -->
+        </div>
+    </div>
+    <script src="./JS/script.js"></script>
+</body>
+</html>

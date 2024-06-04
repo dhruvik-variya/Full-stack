@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+    padding: 2%;
+    color: white;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-1 {
+    width: 100%;
+}
+
+.w-2 {
+    width: 50%;
+}
+
+.w-3 {
+    width: 33.33%;
+}
+
+.w-66 {
+    width: 66.66%;
+}
+
+.w-4 {
+    width: 25%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.py {
+    padding: 100px 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.menudata {
+    text-decoration: none;
+    list-style: none;
+    margin: 10px 30px;
+    cursor: pointer;
+}
+
+.menudata:hover {
+    border-bottom: 2px solid white;
+    transform: translateY(-8px);
+    transition: .5s;
+}
+
+.sectiontxt {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+.menu {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    left: 60%;
+    bottom: 80px;
+    width: 35%;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo img {
+    width: 80px;
+    object-fit: contain;
+}
+
+.txt {
+    position: absolute;
+    top: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.txt h1 {
+    font-size: 55px;
+    font-weight: 500;
+    position: relative;
+    left: 10%;
+    top: 70px;
+    width: 800px;
+}
+
+.txt-2 {
+    width: 700px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 50px;
+    position: relative;
+    top: 80px;
+    left: 10%;
+}
+
+.banner {
+    max-width: 100%;
+    height: 750px;
+    background-image: url(../img/banner.jpg);
+    position: relative;
+    left: 2%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.batan a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #fefefe;
+    text-transform: uppercase;
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.batan a::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background-color: #212121;
+    transition: 0.3s ease-in-out;
+    transform: scaleY(1);
+}
+
+.batan a:hover::before {
+    transform: scaleY(0);
+}
+
+.batan a::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background-color: #212121;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(1);
+    transition-delay: 0.5s;
+}
+
+.batan a:hover::after {
+    transform: scaleX(0);
+}
+
+.batan a span {
+    position: relative;
+    z-index: 3;
+}
+
+button {
+
+    background-color: none;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+.batan {
+    position: relative;
+    top: 45%;
+    left: 5%;
+}
+
+.v1 {
+    position: relative;
+    top: 60px;
+    right: 0px;
+    height: 400px;
+}
+
+.paragraph {
+    position: relative;
+    left: 60%;
+    bottom: 300px;
+    width: 400px;
+    font-size: 22px;
+}
+
+.mid-txt {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif
+}
+
+.box {
+    box-sizing: border-box;
+    height: 300px;
+    width: 600px;
+    background-color: #fefefe;
+    border-radius: 100px 0px 100px 0px;
+}
+
+.box:hover {
+
+    border: 3px solid #fff;
+    transform: all 5s linier;
+}
+
+.parentImg {
+    height: 300px;
+    width: 600px;
+    border-radius: 100px 0px 100px 0px;
+    object-fit: cover;
+}
+
+#parent-box {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.center {
+    margin-top: -180px;
+    text-align: center;
+    font-size: 32PX;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imgmain img {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    border-radius: 3%;
+
+}
+
+.con {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text {
+    text-align: center;
+    margin: 40px;
+}
+
+.cardImg {
+    width: 400px;
+    height: 400px;
+    border-radius: 5%;
+
+}
+
+.cardImg:hover {
+    transform: scale(0.9, 0.9);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.card {
+    width: 400px;
+    ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.carddata {
+    margin-top: 5%;
+    font-size: 16px;
+}
+
+.cardH {
+    margin-top: 10%;
+}
+
+.exe {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 32PX;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.luxury {
+    text-align: center;
+    margin: 10%;
+    font-size: 32px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.cardHeading {
+    padding: 15px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.long-txt {
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    text-transform: capitalize;
+    width: 800px;
+    position: relative;
+    left: 20%;
+    font-family: 'Courier New', Courier, monospace
+}
+
+/* FOOTER  */
+.footer {
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    border-top-left-radius: 125px;
+    position: relative;
+    left: 2%;
+    top: 100px;
+    width: 100%;
+    height: 530px;
+}
+
+.gallery-img {
+    padding: 5px 5px;
+    width: 80px;
+    height: 50px;
+}
+
+.contact-us h3,
+.opening-time h3,
+.twitter h3,
+.gallery h3 {
+    margin-bottom: 29px;
+    color: white;
+    font-weight: 500;
+}
+
+.opening-time p {
+    line-height: 25px;
+}
+
+.contact-us li {
+    line-height: 33px;
+}
+
+.contact-us li i {
+    font-size: 16px;
+    color: #999999;
+}
+
+.contact-us li span,
+.contact-us li a {
+    margin-left: 10px;
+}
+
+.opening-time h3 {
+    margin-top: 50px;
+}
+
+.twitter li p {
+    margin: 3px 0;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.twitter .dt p {
+    margin: 30px 0;
+    color: #555555;
+    font-weight: 400;
+}
+
+.contact-us li,
+.opening-time p,
+.twitter li p {
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.twitter li i {
+    color: white;
+    font-size: 13px;
+    margin-right: 7px;
+}
+
+.twitter li a {
+    color: red;
+    font-size: 14px;
+}
+
+.twitter {
+    margin-right: 50px;
+}
+
+.footlogo {
+    width: 80px;
+    position: relative;
+    margin: 100px;
+    left: 40%;
+}
+
+.shortcut {
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.dv {
+    width: 60px;
+    position: relative;
+    left: 800px;
+    bottom: 50px;
+    border-radius: 50%;
+}
+
+.dvname a {
+    width: 600px;
+    color: red;
+    font-weight: 900;
+    position: relative;
+    left: 550px;
+    text-transform: capitalize;
+}
+
+.footedit {
+    width: 200px;
+    height: 40px;
+}
+
+.iconimg {
+    width: 130px;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+}

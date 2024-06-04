@@ -1,0 +1,152 @@
+.div{
+    color: white;
+    background-color: green;
+    height: 100px;
+   box-sizing: border-box;
+   border: 1px solid transparent ;
+   font-family: "Jura", sans-serif;
+}
+
+h2{
+    margin-top:20px ;
+    margin-left: 50px;
+ }
+
+body{
+    background-color: aqua;
+ }
+
+ .div2{
+    color: #000000;
+    text-align: center;
+    font-size: 21px;
+    border-bottom: 2px dotted;
+    height: 30px;
+    width: 75px;
+    margin-left: 700px;
+ }
+ 
+ .c-1{
+    color: gray;
+    font-size: small;
+    margin-top: -10px;
+ }
+
+ .time{
+  color: gray;
+  font-size: 12px;
+ }
+ .pz{
+    margin-left: 14px;
+    margin-top: 22px;
+    font-family: "Passion One", sans-serif;
+    border-bottom: 2px dashed #808080 ;
+    width: 50px;
+    
+ }
+  .PW-2 {
+   border-top: 2PX dashed;
+   margin-top: 5px;
+   margin-bottom: 5px;
+ }
+ 
+
+ .c-2{
+    color: gray;
+    font-size: small;
+    padding-left: 1450px;
+    margin-top: -10px;
+ }
+
+ .pw{
+    padding-left: 1385px;
+    font-family: "Passion One", sans-serif;
+    width: 140px;
+ }
+ 
+ .PW-1{
+   
+   border-bottom: 2PX dashed;
+   margin-top: 5px;
+   margin-bottom: 5px;
+ }
+
+ .pr{
+   margin-left: 14px;
+   margin-top: 22px;
+   font-family: "Passion One", sans-serif;
+   width: 500px;
+ }
+
+ .c-3{
+   color: gray;
+   font-size: small;
+   margin-top: -10px;
+ }
+
+ .pw-4{
+   
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border-top: 2px dashed;
+   width: 60px;
+ }
+
+ .pr2{
+   margin-left: 14px;
+   margin-top: 22px;
+   font-family: "Passion One", sans-serif;
+   width: 500px;  
+ }
+
+ .pw-6{
+   margin-top: 5px;
+   margin-bottom: 5px;
+   padding-top: 5px;
+   width: 70px;
+   color: gray;
+   font-size: small;
+   border-top: 2px dashed;
+   width: 70px;
+ }
+
+ .c-4{
+   color: gray;
+   font-size: small;
+   margin-top: -10px;
+ }
+
+ .pww{
+   margin-left: 1480px;
+   margin-top: 22px;
+   font-family: "Passion One", sans-serif;
+   width: 500px;
+ }
+
+ .c-5{
+  color: gray;
+  font-size: small;
+  padding-left: 1450px;
+  margin-top: -10px;
+ }
+
+ .PW-7{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-top: 2px dashed;
+  width: 60px;
+ }
+
+ .t-1{
+  margin-left: 1380px;
+  margin-top: 22px;
+  font-family: "Passion One", sans-serif;
+  width: 500px;
+ }
+
+ .t-2{
+  margin-left: 1370px;
+  margin-top: 22px;
+  font-family: "Passion One", sans-serif;
+  width: 500px;
+ }

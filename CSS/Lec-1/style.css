@@ -1,0 +1,27 @@
+body{
+    background-color: #FFFDD7;
+}
+
+.title{
+    font-size: 60px;
+    text-align: center;
+    background:#A4CE95;
+    color: #481E14;
+}
+
+
+.pa{
+    /* font-family : arial; */
+    font-family: "Tac One", sans-serif;
+    Font-Size : 20px;
+    color : blue;
+    Font-Weight: 900;  
+    Text-Align : 0px;
+    Line-Height: 50px;
+    Letter-Spacing: 0px ;
+    Word-Spacing: 5px;
+    text-decoration: underline;
+    font-style: italic;
+    text-transform: capitalize;
+    text-indent: 200px; 
+} 
